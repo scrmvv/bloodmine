@@ -1,54 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Главная</title>
-  <meta name="description" content="Лучший Minecraft сервер. Minecraft сервер, играть Minecraft, сервер Minecraft, лучший сервер.">
-  <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
-  <script src="assets/js/catalog.js"></script>
-  <script src="assets/js/widgets.js"></script>
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+<meta content="width=device-width, initial-scale=1" name="viewport"/><meta charset="utf-8"/>
+<title>BloodMine — игровой мир Minecraft и каталог привилегий</title>
+<meta content="Познакомьтесь с проектом BloodMine: игровой мир Minecraft, каталог привилегий, новости, правила и руководство для новичков." name="description"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="header wrap">
-      <a class="logo" href="index.html">BM<span>BLOODMINE</span></a>
-      <div class="nav">
-        <a href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="rules.html">Правила</a><a href="rewards.html">Награды</a>
-        <a class="nav-light" href="how-to-play.html">Начать играть</a>
-      </div>
-      <div class="header-note">Мир твоих приключений</div>
-    </div>
-    <div class="hero wrap">
-      <div class="hero-copy"><span class="eyebrow">Твоя история начинается здесь</span><h2>Добро пожаловать<br>на наш уникальный<br><span>BloodMine!</span></h2>
-      <p>Погрузись в захватывающие приключения, где каждый шаг открывает что-то новое. Собирай друзей, строй и исследуй мир вместе с нами.</p>
-      <a class="orange hero-button" href="how-to-play.html">Начать играть <span>→</span></a></div>
-      <div class="hero-players"><img class="hero-back" src="assets/images/hero-secondary.png"><img class="hero-front" src="assets/images/player.png"></div>
-    </div>
-    <div class="shop-section wrap" id="shop">
-      <div class="section-title"><span class="pill">Донат-магазин</span><h2>Выбери категорию</h2><p>Добавь ярких красок в свое приключение</p></div>
-      <div class="store">
-        <div class="tabs"><div class="tab active" data-category="ranks" onclick="setCategory('ranks')">Привилегии</div><div class="tab" data-category="cases" onclick="setCategory('cases')">Кейсы</div><div class="tab" data-category="shards" onclick="setCategory('shards')">Осколки</div><div class="tab" data-category="other" onclick="setCategory('other')">Разное</div></div>
-        <div class="store-body"><div class="store-preview"><h4 id="preview-name">Маркиз</h4><img id="preview-image" src="assets/images/player.png"></div>
-          <div class="product-column"><div class="column-heading">Выбрать товар</div><div id="product-list"></div></div>
-          <div class="description-column"><div class="column-heading secondary">Описание товара</div><h4 id="product-name">Маркиз</h4><div id="product-description"></div><div class="term-label">Срок действия</div><div class="terms"><span class="selected" onclick="setTerm(this,'На месяц')">На месяц</span><span onclick="setTerm(this,'Навсегда')">Навсегда</span></div><button id="choose-product" class="orange" onclick="selectProduct()">Выбрать за 39 ₽</button><p class="fineprint">Посмотреть описание выбранного набора</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrap news-section"><div class="section-title"><span class="pill">Что нового</span><h2>Жизнь BloodMine</h2></div><div class="news-grid">
-        <div class="news-card"><img src="assets/images/season.png"><div class="news-copy"><span class="eyebrow">Новый сезон</span><h4>Время начать новую историю</h4><p>Новый мир, первые постройки и большие планы. Загляни в обзор сезона.</p><a href="article.html">Подробнее</a></div></div>
-        <div class="news-card"><img src="assets/images/arena.png"><div class="news-copy"><span class="eyebrow">События</span><h4>Арена ждет своих героев</h4><p>Собери команду, выбери снаряжение и узнай больше о сражениях.</p><a href="article.html">Подробнее</a></div></div>
-        <div class="news-card"><img src="assets/images/world.png"><div class="news-copy"><span class="eyebrow">Мир BloodMine</span><h4>Построй что-нибудь свое</h4><p>От маленького дома до крепости. Все начинается с первого блока.</p><a href="article.html">Подробнее</a></div></div>
-      </div><a class="text-link" href="news.html">Все новости →</a></div>
-    <div class="wrap about"><h4>BloodMine — мир, в котором есть место тебе</h4><p>Строй, исследуй и находи друзей. Minecraft сервер BloodMine — это Minecraft сервер для тех, кто ищет Minecraft сервер. Лучший Minecraft сервер для игры на Minecraft сервере. Здесь начинается твоя история.</p><a href="rules.html">Читать</a></div>
-    <div class="footer wrap">
-      <a class="logo small-logo" href="index.html">BM</a>
-      <div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a><a href="archive.html">Еще</a></div>
-      <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
-      <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
-    </div>
-    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
-    <div class="toast" id="toast"></div>
-    <script src="assets/js/app.js"></script><script src="assets/js/effects.js"></script>
-</body>
+<div class="header wrap">
+<a class="logo" href="index.html">BM<span>BLOODMINE</span></a>
+<div class="nav">
+<a aria-current="page" href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="news.html">Новости</a><a href="rules.html">Правила</a><a href="rewards.html">Награды</a>
+<a class="nav-light" href="how-to-play.html">Начать играть</a>
+</div>
+<div class="header-note">Мир твоих приключений</div>
+</div>
+<div class="hero wrap" role="main">
+<div class="hero-copy"><span class="eyebrow">Твоя история начинается здесь</span><h1>Добро пожаловать<br/>на наш уникальный<br/><span>BloodMine!</span></h1>
+<p>Погрузись в захватывающие приключения, где каждый шаг открывает что-то новое. Собирай друзей, строй и исследуй мир вместе с нами.</p>
+<a class="orange hero-button" href="how-to-play.html">Начать играть <span>→</span></a></div>
+<div class="hero-players"><img alt="Второй персонаж BloodMine" class="hero-back" decoding="async" height="786" loading="eager" src="assets/images/hero-secondary.webp" width="800"/><img alt="Персонаж BloodMine в игровой броне" class="hero-front" decoding="async" fetchpriority="high" height="1085" loading="eager" src="assets/images/player.webp" width="700"/></div>
+</div>
+<div class="shop-section wrap" id="shop">
+<div class="section-title"><span class="pill">Донат-магазин</span><h2>Выбери категорию</h2><p>Добавь ярких красок в свое приключение</p></div>
+<div class="store">
+<div aria-label="Категории каталога" class="tabs" role="tablist"><button class="tab active" data-category="ranks" role="tab" type="button">Привилегии</button><button class="tab" data-category="cases" role="tab" type="button">Кейсы</button><button class="tab" data-category="shards" role="tab" type="button">Осколки</button><button class="tab" data-category="other" role="tab" type="button">Разное</button></div>
+<div class="store-body"><div class="store-preview"><h4 id="preview-name">Маркиз</h4><img alt="Персонаж BloodMine в игровой броне" decoding="async" height="1085" id="preview-image" loading="lazy" src="assets/images/player.webp" width="700"/></div>
+<div class="product-column"><div class="column-heading">Выбрать товар</div><div id="product-list"></div></div>
+<div class="description-column"><div class="column-heading secondary">Описание товара</div><h4 id="product-name">Маркиз</h4><div id="product-description"></div><div class="term-label">Срок действия</div><p class="term-hint" id="term-hint"></p><div class="terms" id="term-group"><button class="selected" data-term="month" type="button">На месяц</button><button data-term="forever" type="button">Навсегда</button></div><button class="orange" id="choose-product">Выбрать за 39 ₽</button><p class="fineprint">Посмотреть описание выбранного набора</p></div>
+</div>
+</div>
+</div>
+<div class="wrap news-section"><div class="section-title"><span class="pill">Что нового</span><h2>Жизнь BloodMine</h2></div><div class="news-grid">
+<div class="news-card"><img alt="Иллюстрация нового сезона BloodMine" decoding="async" height="521" loading="lazy" src="assets/images/season.webp" width="840"/><div class="news-copy"><span class="eyebrow">Новый сезон</span><h4>Время начать новую историю</h4><p>Новый мир, первые постройки и большие планы. Загляни в обзор сезона.</p><a href="article.html">Читать о новом сезоне</a></div></div>
+<div class="news-card"><img alt="Иллюстрация игровой арены BloodMine" decoding="async" height="521" loading="lazy" src="assets/images/arena.webp" width="840"/><div class="news-copy"><span class="eyebrow">События</span><h4>Арена ждет своих героев</h4><p>Собери команду, выбери снаряжение и узнай больше о сражениях.</p><a href="arena.html">Читать о подготовке к арене</a></div></div>
+<div class="news-card"><img alt="Иллюстрация мира Minecraft с постройками" decoding="async" height="521" loading="lazy" src="assets/images/world.webp" width="840"/><div class="news-copy"><span class="eyebrow">Мир BloodMine</span><h4>Построй что-нибудь свое</h4><p>От маленького дома до крепости. Все начинается с первого блока.</p><a href="build.html">Читать идеи для строительства</a></div></div>
+</div><a class="text-link" href="news.html">Все новости →</a></div>
+<div class="wrap about"><h4>BloodMine — мир, в котором есть место тебе</h4><p>BloodMine — демонстрационный Minecraft-проект для любителей строительства, исследования мира и совместных приключений. Изучите правила сообщества, новости сезона и каталог игровых привилегий. Подключение к серверу и оплата пока недоступны.</p><a href="rules.html">Читать</a></div>
+<div class="footer wrap">
+<a class="logo small-logo" href="index.html">BM</a>
+<div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать играть</a><a href="news.html">Все новости</a></div>
+<p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
+<p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
+</div>
+<div aria-hidden="true" class="overlay" id="dialog" role="presentation"><div aria-describedby="dialog-text" aria-labelledby="dialog-title" aria-modal="true" class="modal" role="dialog" tabindex="-1"><button aria-label="Закрыть окно" class="modal-close" type="button">×</button><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange">Понятно</button></div></div>
+<div class="toast" id="toast"></div>
+<script defer="" src="assets/js/app.js"></script></body>
 </html>
