@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <meta name="description" content="Лучший Minecraft сервер. Minecraft сервер, играть Minecraft, сервер Minecraft, лучший сервер.">
+  <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/widgets.js"></script>
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="header wrap">
+      <a class="logo" href="index.html">BM<span>BLOODMINE</span></a>
+      <div class="nav">
+        <a href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="rules.html">Правила</a><a href="rewards.html">Награды</a>
+        <a class="nav-light" href="how-to-play.html">Начать играть</a>
+      </div>
+      <div class="header-note">Мир твоих приключений</div>
+    </div>
+    <div class="wrap inner-page"><div class="section-title"><span class="pill">Игровой мир</span><h2>Правила проекта</h2><p>Чтобы приключение оставалось приятным для каждого</p></div><div class="rules-intro"><p>Ниже приведены демонстрационные правила игрового сообщества. Открой нужный раздел и прочитай пояснение.</p></div><div class="rules-list"><div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>1. Общие положения</span><b>+</b></div><div class="rule-content">Уважайте других участников. Перед началом игры ознакомьтесь с правилами и уточните непонятные пункты. Правила помогают сохранять понятные условия для всех. Незнание правил не освобождает от необходимости их соблюдать.</div></div>
+<div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>2. Общение в чате</span><b>+</b></div><div class="rule-content">Не оскорбляйте собеседников, не засоряйте чат повторяющимися сообщениями и не публикуйте чужие личные сведения. Для разногласий используйте спокойное обсуждение. Сообщение должно быть понятно другим игрокам.</div></div>
+<div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>3. Честная игра</span><b>+</b></div><div class="rule-content">Не используйте программы и изменения клиента, дающие запрещенное преимущество. Не пытайтесь обходить ограничения игры. Если заметили ошибку, опишите обстоятельства ее появления и не используйте ее против других игроков.</div></div>
+<div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>4. Постройки и территории</span><b>+</b></div><div class="rule-content">Уважайте границы чужих построек. Перед совместным строительством договоритесь о доступе и обязанностях. Не выдавайте чужую работу за свою и не мешайте другим участникам развивать их территорию.</div></div>
+<div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>5. Игровая торговля</span><b>+</b></div><div class="rule-content">Заранее обсуждайте условия обмена. Проверяйте предмет и количество до подтверждения договоренности. Не обманывайте других игроков и не обещайте то, что не можете передать.</div></div>
+<div class="rule"><div class="rule-heading" onclick="toggleRule(this)"><span>6. Обращения и спорные ситуации</span><b>+</b></div><div class="rule-content">Опишите, что произошло, когда это случилось и какие действия этому предшествовали. Сохраните снимки экрана. По одному короткому сообщению без контекста трудно понять обстоятельства ситуации.</div></div></div><div class="bottom-help"><h4>Остались вопросы?</h4><p>Начни с небольшого руководства по знакомству с проектом.</p><a class="orange" href="how-to-play.html">Узнать больше</a></div></div>
+    <div class="footer wrap">
+      <a class="logo small-logo" href="index.html">BM</a>
+      <div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a><a href="archive.html">Еще</a></div>
+      <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
+      <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
+    </div>
+    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
+    <div class="toast" id="toast"></div>
+    <script src="assets/js/app.js"></script><script src="assets/js/effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <meta name="description" content="Лучший Minecraft сервер. Minecraft сервер, играть Minecraft, сервер Minecraft, лучший сервер.">
+  <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/widgets.js"></script>
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="header wrap">
+      <a class="logo" href="index.html">BM<span>BLOODMINE</span></a>
+      <div class="nav">
+        <a href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="rules.html">Правила</a><a href="rewards.html">Награды</a>
+        <a class="nav-light" href="how-to-play.html">Начать играть</a>
+      </div>
+      <div class="header-note">Мир твоих приключений</div>
+    </div>
+    <div class="wrap inner-page"><div class="section-title"><span class="pill">Награды</span><h2>Выбери свою награду</h2><p>Открой описание и найди цель для нового приключения</p></div><div class="rewards-grid"><div class="reward-card"><span class="reward-number">01</span><img src="assets/images/chest.png"><h4>Первый шаг</h4><p>Небольшое начало большого приключения</p><button class="orange" onclick="showReward('Первый шаг')">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">02</span><img src="assets/images/chest.png"><h4>Исследователь</h4><p>Для тех, кто не стоит на месте</p><button class="orange" onclick="showReward('Исследователь')">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">03</span><img src="assets/images/chest.png"><h4>Строитель</h4><p>Каждый блок становится частью истории</p><button class="orange" onclick="showReward('Строитель')">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">04</span><img src="assets/images/chest.png"><h4>Командный игрок</h4><p>Вместе интереснее, чем поодиночке</p><button class="orange" onclick="showReward('Командный игрок')">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">05</span><img src="assets/images/chest.png"><h4>Коллекционер</h4><p>Самое интересное еще впереди</p><button class="orange" onclick="showReward('Коллекционер')">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">06</span><img src="assets/images/chest.png"><h4>Герой сезона</h4><p>Впереди новые цели и открытия</p><button class="orange" onclick="showReward('Герой сезона')">Посмотреть</button></div></div><div class="reward-banner"><img src="assets/images/player.png"><div><h4>Любая история начинается с малого</h4><p>Изучай мир, собирай команду и придумывай свои цели.</p><a href="rules.html">Читать</a></div></div></div>
+    <div class="footer wrap">
+      <a class="logo small-logo" href="index.html">BM</a>
+      <div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a><a href="archive.html">Еще</a></div>
+      <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
+      <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
+    </div>
+    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
+    <div class="toast" id="toast"></div>
+    <script src="assets/js/app.js"></script><script src="assets/js/effects.js"></script>
+</body>
+</html>
